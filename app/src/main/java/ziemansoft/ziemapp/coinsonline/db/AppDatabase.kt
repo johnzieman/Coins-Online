@@ -7,14 +7,14 @@ import androidx.room.RoomDatabase
 import ziemansoft.ziemapp.coinsonline.pojo.CoinPriceInfo
 
 @Database(entities = [CoinPriceInfo::class], version = 1, exportSchema = false)
-abstract class AppDatabase: RoomDatabase() {
-    companion object{
+abstract class AppDatabase : RoomDatabase() {
+    companion object {
         private var db: AppDatabase? = null
         private const val DB_NAME = "main.db"
         private val LOCK = Any()
 
-        fun getInstance(context: Context):AppDatabase{
-            synchronized(LOCK){
+        fun getInstance(context: Context): AppDatabase {
+            synchronized(LOCK) {
                 db?.let { return it }
                 val instance = Room.databaseBuilder(context, AppDatabase::class.java, DB_NAME).build()
                 db = instance
@@ -22,5 +22,6 @@ abstract class AppDatabase: RoomDatabase() {
             }
         }
     }
-    abstract fun databaseDao():DatabaseDao
+
+    abstract fun databaseDao(): DatabaseDao
 }

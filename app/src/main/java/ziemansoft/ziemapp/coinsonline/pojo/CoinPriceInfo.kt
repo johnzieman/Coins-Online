@@ -1,5 +1,6 @@
 package ziemansoft.ziemapp.coinsonline.pojo
 
+import androidx.annotation.NonNull
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.Expose
@@ -16,7 +17,7 @@ data class CoinPriceInfo(
         @PrimaryKey
         @SerializedName("FROMSYMBOL")
         @Expose
-        val fromSymbols: String?,
+        val fromSymbols: String,
         @SerializedName("TOSYMBOL")
         @Expose
         val toSymbols: String?,
@@ -31,7 +32,7 @@ data class CoinPriceInfo(
         val lastUpdate: Int,
         @SerializedName("MEDIAN")
         @Expose
-        val median: Int,
+        val median: Double,
         @SerializedName("LASTVOLUME")
         @Expose
         val lastVolume: Double,
@@ -61,7 +62,7 @@ data class CoinPriceInfo(
         val highDay: Double,
         @SerializedName("LOWDAY")
         @Expose
-        val lowDay: Int,
+        val lowDay: Double,
         @SerializedName("OPEN24HOUR")
         @Expose
         val open24Hour: Double,
@@ -124,7 +125,7 @@ data class CoinPriceInfo(
         val supply: Int,
         @SerializedName("MKTCAP")
         @Expose
-        val mktcap: Int,
+        val mktcap: Double,
         @SerializedName("MKTCAPPENALTY")
         @Expose
         val mktcapPenalty: Int,
