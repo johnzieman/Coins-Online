@@ -5,5 +5,4 @@ RxJava, Retrofit, AAC, Kotlin
 
 #### what does this app do
 The application is designed to monitor changes in cryptocurrency prices.
-
-![github-small](https://twitter.com/johnzieman/status/1334954808378335233/photo/1)
+<a href="url"><img src="https://github.com/johnzieman/Coins-Online/blob/main/Screenshot_1607112848.png" width="400" ></a>
