@@ -9,7 +9,7 @@ import ziemansoft.ziemapp.coinsonline.pojo.CoinPriceInfo
 
 @Dao
 interface DatabaseDao {
-    @Query("SELECT * FROM coinsInfo ORDER BY lastUpdate")
+    @Query("SELECT * FROM coinsInfo ORDER BY price DESC")
     fun getPriceList():LiveData<List<CoinPriceInfo>>
 
     @Query("SELECT * FROM coinsInfo WHERE fromSymbols ==:fsym LIMIT 1")

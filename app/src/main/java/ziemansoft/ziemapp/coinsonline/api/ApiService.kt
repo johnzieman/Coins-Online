@@ -11,7 +11,7 @@ interface ApiService {
     fun getCurrentFullData(
             @Query("api_key") apiKey: String = "7438f5426f11a55ebbf4d9bca3bef34dbec80b8e6c2bd3dc3c334f8c8e2352ee",
             @Query("fsyms") fSyms: String,
-            @Query("tsyms") tsyms: String = "USD,EUR"
+            @Query("tsyms") tsyms: String = "USD"
     ): Single<CoinRowInfo>
 
     @GET("data/top/totalvolfull")
