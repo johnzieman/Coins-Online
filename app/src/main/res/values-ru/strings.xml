@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coins Online</string>
+    <string name="price">Цена:</string>
+    <string name="minimum_per_day">Минимум за день:</string>
+    <string name="maximum_per_day">Максимум за день:</string>
+    <string name="the_last_deal">Последняя сделка:</string>
+    <string name="last_updated">Обновлено:</string>
+</resources>

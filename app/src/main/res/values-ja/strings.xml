@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coins Online</string>
+    <string name="price">価格：</string>
+    <string name="minimum_per_day">1日あたりの最小額：</string>
+    <string name="maximum_per_day">1日あたりの最大数：</string>
+    <string name="the_last_deal">最後の取引：</string>
+    <string name="last_updated">最終更新：</string>
+</resources>

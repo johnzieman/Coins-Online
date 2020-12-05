@@ -7,6 +7,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.activity_main.*
 import ziemansoft.ziemapp.coinsonline.adapter.CoinInfoAdapter
+import ziemansoft.ziemapp.coinsonline.pojo.CoinPriceInfo
 import ziemansoft.ziemapp.coinsonline.viewmodels.CoinViewModel
 
 class MainActivity : AppCompatActivity(){
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val adapter = CoinInfoAdapter()
+        val adapter = CoinInfoAdapter(this)
         recyclerView.adapter = adapter
         coinViewModel = ViewModelProvider(this).get(CoinViewModel::class.java)
         coinViewModel.getUserContext(this)
@@ -24,5 +25,12 @@ class MainActivity : AppCompatActivity(){
             adapter.coinInfoList = it
             Log.d("THISS", it.toString())
         })
+
+        adapter.onCoinClickListener = object: CoinInfoAdapter.OnCoinClickListener{
+            override fun onCoinClick(coinPriceInfo: CoinPriceInfo) {
+               val intent = DetailInfo.newIntent(this@MainActivity, coinPriceInfo.fromSymbols)
+                startActivity(intent)
+            }
+        }
     }
 }

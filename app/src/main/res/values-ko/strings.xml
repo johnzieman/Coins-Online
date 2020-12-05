@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coins Online</string>
+    <string name="price">가격:</string>
+    <string name="minimum_per_day">하루 최소 :</string>
+    <string name="maximum_per_day">하루 최대 :</string>
+    <string name="the_last_deal">마지막 거래 :</string>
+    <string name="last_updated">마지막 업데이트 :</string>
+</resources>

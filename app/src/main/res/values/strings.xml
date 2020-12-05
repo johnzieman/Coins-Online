@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Coins Online</string>
+    <string name="price">Price:</string>
+    <string name="minimum_per_day">Minimum per day: </string>
+    <string name="maximum_per_day">Maximum per day: </string>
+    <string name="the_last_deal">The last deal: </string>
+    <string name="last_updated">Last updated: </string>
 </resources>

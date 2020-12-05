@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coins Online</string>
+    <string name="price">"Narxi: "</string>
+    <string name="minimum_per_day">Kuniga minimal:</string>
+    <string name="maximum_per_day">Kuniga maksimal:</string>
+    <string name="the_last_deal">Oxirgi bitim:</string>
+    <string name="last_updated">Oxirgi yangilangan:</string>
+</resources>
